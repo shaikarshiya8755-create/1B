@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Selector with Color Change</title>
@@ -13,21 +13,21 @@
 
     <button onclick="selectElements()">Click Me</button>
 
-    <script src="script2.js"></script>
+    <script>
+        function selectElements() {
+            // Select element by ID
+            let titlejs = document.getElementById("title");
+            titlejs.style.color = "blue";
+
+            // Select element by Class Name
+            let messagejs = document.getElementsByClassName("message")[0];
+            messagejs.style.color = "green";
+
+            // Select element by Tag Name
+            let paragraphs = document.getElementsByTagName("p");
+            paragraphs[1].style.backgroundColor = "yellow";
+        }
+    </script>
 
 </body>
 </html>
-function selectElements() {
-
-    // Select element by ID
-    let titlejs = document.getElementById("title");
-    titlejs.style.color = "blue";
-
-    // Select element by Class
-    let messagejs = document.getElementsByClassName("message")[0];
-    messagejs.style.color = "green";
-
-    // Select elements by Tag Name
-    let paragraphs = document.getElementsByTagName("p");
-    paragraphs[1].style.backgroundColor = "yellow";
-}
