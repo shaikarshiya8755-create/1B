@@ -1,24 +1,33 @@
-<!DOCTTYPE html
-<html> 
-<head> 
-<title>Selector with Color Change</title> 
-</head> 
-<body> 
-<h1 id="title">Hello SVPCET Students</h1> 
-<h1></h1> 
-<h1><p class="message">This Dept of CAI.</p><h1> 
-<h1><p>This is 3rd Year V Sem.</p></h1> 
-<button onclick="selectElements()">Click Me</button> 
-<script src="script2.js"></script> 
-</body> 
-</html> 
-script2.js 
-function selectElements() 
-{ 
-let titlejs = document.getElementById("title"); 
-titlejs.style.color = "blue"; 
-let messagejs = document.getElementsByClassName("message")[0]; 
-messagejs.style.color = "green"; 
-let paragraphs = document.getElementsByTagName("p"); 
-paragraphs[1].style.backgroundColor = "yellow"; 
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Selector with Color Change</title>
+</head>
+<body>
+
+    <h1 id="title">Hello SVPCET Students</h1>
+
+    <p class="message">This is Dept of CAI.</p>
+
+    <p>This is 3rd Year V Sem.</p>
+
+    <button onclick="selectElements()">Click Me</button>
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
+function selectElements() {
+
+    // Select element by ID
+    let titlejs = document.getElementById("title");
+    titlejs.style.color = "blue";
+
+    // Select element by Class
+    let messagejs = document.getElementsByClassName("message")[0];
+    messagejs.style.color = "green";
+
+    // Select elements by Tag Name
+    let paragraphs = document.getElementsByTagName("p");
+    paragraphs[1].style.backgroundColor = "yellow";
 }
